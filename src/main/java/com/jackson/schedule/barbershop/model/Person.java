@@ -1,17 +1,10 @@
 package com.jackson.schedule.barbershop.model;
-
 import jakarta.persistence.MappedSuperclass;
-
 @MappedSuperclass
 public abstract class Person {
+    protected String name;
 
-    private String name;
+    public abstract String getName();
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    public abstract void setName(String name);
 }

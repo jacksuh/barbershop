@@ -1,20 +1,33 @@
 package com.jackson.schedule.barbershop.model;
+import com.jackson.schedule.barbershop.dto.barber.BarberDto;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
-import org.springframework.format.annotation.DateTimeFormat;
-import java.time.LocalDateTime;
+import lombok.NoArgsConstructor;
+import java.util.List;
+
 @Table(name ="barbeiro")
 @Entity(name = "Barbeiro")
 @EqualsAndHashCode(of = "idBarbeiro")
-public class Barber extends Person{
+@NoArgsConstructor
+public class Barber extends Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @DateTimeFormat(pattern = "dd-MM-yyyy HH:mm:ss")
-    private LocalDateTime date;
 
+    @OneToMany(mappedBy = "barber")
+    private List<Scheduling> scheduling;
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public Long getId() {
         return id;
@@ -24,11 +37,13 @@ public class Barber extends Person{
         this.id = id;
     }
 
-    public LocalDateTime getDate() {
-        return date;
+
+    public List<Scheduling> getScheduling() {
+        return scheduling;
     }
 
-    public void setDate(LocalDateTime date) {
-        this.date = date;
+    public Barber (BarberDto dto){
+        this.setName(dto.getName());
     }
+
 }

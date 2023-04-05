@@ -1,5 +1,4 @@
-package com.jackson.schedule.barbershop.dto;
-
+package com.jackson.schedule.barbershop.dto.client;
 import com.jackson.schedule.barbershop.model.Client;
 
 public class ClientDetailingDto {
@@ -7,6 +6,7 @@ public class ClientDetailingDto {
     private Long id;
 
     private String name;
+
 
     public Long getId() {
         return id;
@@ -27,6 +27,8 @@ public class ClientDetailingDto {
     public ClientDetailingDto(Client client){
         this.id = client.getId();
         this.name = client.getName();
+
+
     }
 
 }
