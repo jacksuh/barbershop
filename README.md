@@ -3,17 +3,17 @@
 Api criada para agendamento de serviços de barbearia.
 
 ## ⚙️ Funcionalidades
-- [] Criação das classes.
-- [] Padronização das classes.
-- [] Criação das classes dto.
-- [] Integração com banco de dados MySQL.
-- [] Criação dos metodos na controller, Salvar,Editar,Excluir.
-- [] CRUD de das classes e relacionamento, teste pelo postman.
-- [] Paginação.
-- [] Cache.
+- [x] Criação das classes.
+- [x] Criação das classes dto.
+- [x] Integração com banco de dados MySQL.
+- [x] Criação dos metodos na controller, Salvar,Editar,Excluir.
+- [x] CRUD de das classes e relacionamento, teste pelo postman.
+- [x] Paginação.
+- [x] Doc da aplicação.
+- [x] SpringSecurity com token/auth0.
+- [x] Cors.
+- [x] Cache.
 - [] Log4j - Implementação de log/Alguns pontos.
-- [] Doc da aplicação.
-- [] Cors.
 
 
 ## 🛠 Tecnologias
@@ -28,3 +28,4 @@ As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do proj
 - **[Hibernate](https://hibernate.org)**
 - **[Lombok](https://projectlombok.org)**
 - **[Swagger](https://swagger.io/docs/specification/about/)**
+- **[SpringSecurity](https://docs.spring.io/spring-security/reference/index.html)**
