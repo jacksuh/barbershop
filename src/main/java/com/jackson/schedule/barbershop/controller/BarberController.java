@@ -44,5 +44,4 @@ public class BarberController {
         service.deleteBarber(id);
         return ResponseEntity.ok().build();
     }
-
 }
