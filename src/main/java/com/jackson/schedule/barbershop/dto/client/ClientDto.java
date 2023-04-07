@@ -1,18 +1,12 @@
 package com.jackson.schedule.barbershop.dto.client;
-
-import com.jackson.schedule.barbershop.model.Barber;
-
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+@Getter
+@Setter
+@NoArgsConstructor
 public class ClientDto {
 
     private String name;
-
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
 }

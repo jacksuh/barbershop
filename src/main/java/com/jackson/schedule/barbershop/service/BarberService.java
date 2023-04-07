@@ -14,7 +14,6 @@ public class BarberService {
     public Page<Barber> getAll(Pageable page) {
         return repository.findAll(page);
     }
-
     public Barber saveBarber(BarberDto dto) {
         Barber b = new Barber();
         b.setName(dto.getName());
