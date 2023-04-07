@@ -1,5 +1,4 @@
 package com.jackson.schedule.barbershop.infra.springsecurity;
-
 import com.jackson.schedule.barbershop.repository.UserRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

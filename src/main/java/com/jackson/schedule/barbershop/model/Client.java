@@ -18,7 +18,6 @@ public class Client extends Person{
     @OneToMany(mappedBy = "client")
     private List<Scheduling> scheduling;
 
-
     public Long getId() {
         return id;
     }

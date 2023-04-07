@@ -4,18 +4,14 @@ import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import java.util.List;
-
 @Table(name ="barbeiro")
 @Entity(name = "Barbeiro")
 @EqualsAndHashCode(of = "idBarbeiro")
 @NoArgsConstructor
 public class Barber extends Person {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-
     @OneToMany(mappedBy = "barber")
     private List<Scheduling> scheduling;
 
@@ -36,7 +32,6 @@ public class Barber extends Person {
     public void setId(Long id) {
         this.id = id;
     }
-
 
     public List<Scheduling> getScheduling() {
         return scheduling;
