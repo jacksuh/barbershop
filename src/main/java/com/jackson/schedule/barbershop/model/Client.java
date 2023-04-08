@@ -1,16 +1,15 @@
 package com.jackson.schedule.barbershop.model;
 import com.jackson.schedule.barbershop.dto.client.ClientDto;
 import jakarta.persistence.*;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+
 import java.util.List;
 @Table(name = "cliente")
 @Entity(name = "Cliente")
 @EqualsAndHashCode(of = "idCliente")
 @Setter
 @Getter
+@AllArgsConstructor
 @NoArgsConstructor
 public class Client extends Person{
 

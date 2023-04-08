@@ -17,7 +17,6 @@ public class ClientService {
     public Client saveClient(ClientDto dto){
         Client cli = new Client();
         cli.setName(dto.getName());
-
         return  repository.save(cli);
     }
     public Client updateClient(ClientDto dto, Long id) {

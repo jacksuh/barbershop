@@ -19,7 +19,7 @@ public class ClientController {
     ClientService service;
     @PostMapping
     @CacheEvict(value = "client", allEntries = true)
-    public ResponseEntity ClientRegistration(@RequestBody ClientDto dto, UriComponentsBuilder uriBuilder){
+    public ResponseEntity clientRegistration(@RequestBody ClientDto dto, UriComponentsBuilder uriBuilder){
         Client c = service.saveClient(dto);
         var uri = uriBuilder.path("/cliente/{id}").buildAndExpand(c.getName()).toUri();
         return ResponseEntity.created(uri).body(new ClientDetailingDto(c));
