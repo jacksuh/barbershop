@@ -13,8 +13,26 @@ Api criada para agendamento de serviços de barbearia.
 - [x] SpringSecurity com token/auth0.
 - [x] Cors.
 - [x] Cache.
-- [] Log4j - Implementação de log/Alguns pontos.
+- [x] Testes com Mock.
 
+## Cliente:
+- Listar clientes
+- Detalhar cliente
+- Cadastrar cliente
+- Atualizar cliente
+- Excluir Cliente
+
+## Agenda:
+- Listar Agenda
+- Agendar
+- Atualizar Agenda
+- Excluir agenda
+
+## Barbeiro:
+- Listar Barbeiros
+- Cadastrar Barbebeiro
+- Atualizar Barbeiro
+- Excluir Barbeiro
 
 ## 🛠 Tecnologias
 
