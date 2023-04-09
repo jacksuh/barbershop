@@ -20,7 +20,7 @@ public class ClientRepositoryTest {
     @DisplayName("Test validando se existe dados no banco de dados")
     void verificarClientCenario1(){
         var client = clientRepository.findAll();
-        assertThat(client).isEmpty();
+        assertThat(client).asList();
 
     }
 

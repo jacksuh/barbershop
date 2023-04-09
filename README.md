@@ -41,7 +41,6 @@ As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do proj
 - **[Java 17](https://www.oracle.com/java)**
 - **[Spring Boot 3](https://spring.io/projects/spring-boot)**
 - **[Maven](https://maven.apache.org)**
-- **[Log4j](https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core)**
 - **[MySQL](https://www.mysql.com)**
 - **[Hibernate](https://hibernate.org)**
 - **[Lombok](https://projectlombok.org)**
