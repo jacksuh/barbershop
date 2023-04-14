@@ -1,5 +1,6 @@
 package com.jackson.schedule.barbershop.service;
 import com.jackson.schedule.barbershop.dto.user.UserDto;
+import com.jackson.schedule.barbershop.exception.ValidationException;
 import com.jackson.schedule.barbershop.model.User;
 import com.jackson.schedule.barbershop.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,11 +18,16 @@ public class AutenticationService implements UserDetailsService {
         return repository.findByLogin(username);
     }
     public User saveUser(UserDto dto) {
-        User u = new User();
-        u.setLogin(dto.getLogin());
-        u.setPassword(dto.getPassword());
+        UserDetails login = repository.findByLogin(dto.getLogin());
+        if (login != null) {
+            throw new ValidationException("login already exists!");
+        }else {
+            User u = new User();
+            u.setLogin(dto.getLogin());
+            u.setPassword(dto.getPassword());
 
-        return repository.save(u);
+            return repository.save(u);
+        }
     }
     public User updateUser(UserDto dto, Long id) {
         Optional<User> optional = repository.findById(id);
