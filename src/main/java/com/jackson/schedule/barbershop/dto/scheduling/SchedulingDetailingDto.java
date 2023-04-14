@@ -21,7 +21,6 @@ public class SchedulingDetailingDto {
         this.setHour(scheduling.getHour());
         this.setPrice(scheduling.getPrice());
         this.setBarber(scheduling.getBarber().getName());
-        this.setBarber(scheduling.getBarber().getName());
         this.setClient(scheduling.getClient().getName());
 
     }

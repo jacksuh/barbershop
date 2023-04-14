@@ -15,10 +15,10 @@ public class Scheduling {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @JsonIgnore
+
     @ManyToOne
     private Client client;
-    @JsonIgnore
+
     @ManyToOne
     private Barber barber;
     private double price;

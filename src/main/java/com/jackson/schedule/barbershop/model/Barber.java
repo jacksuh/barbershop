@@ -1,4 +1,5 @@
 package com.jackson.schedule.barbershop.model;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.jackson.schedule.barbershop.dto.barber.BarberDto;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
@@ -19,6 +20,7 @@ public class Barber extends Person {
     private Long id;
 
     @OneToMany(mappedBy = "barber")
+    @JsonBackReference
     private List<Scheduling> scheduling;
 
     @Override
