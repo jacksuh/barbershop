@@ -34,6 +34,18 @@ Api criada para agendamento de serviços de barbearia.
 - Atualizar Barbeiro
 - Excluir Barbeiro
 
+## Executar o projeto
+Dentro do diretorio utilizando o terminal digite:
+
+#### mvn clean install.
+
+Finalizando com sucesso
+
+## Execute.
+
+#### mvn spring-boot:run
+
+
 ## 🛠 Tecnologias
 
 As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do projeto:
