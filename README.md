@@ -34,6 +34,7 @@ Api criada para agendamento de serviços de barbearia.
 - Atualizar Barbeiro
 - Excluir Barbeiro
 
+
 ## Executar o projeto
 Dentro do diretorio utilizando o terminal digite:
 
